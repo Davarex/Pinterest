@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+.form-control{
+    border-radius: 20px;
+    height: 45px;
+    background-color: rgba(131, 126, 126, 0.301);
+}
+
+.ListaOne{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item{
+    padding: 10px;
+}
+
+.ListaTwo{
+    padding-left: 15px;
+}
+
+#galeria{
+    width: 100%;
+    max-width: 1800px;
+    column-count: 5;
+    position: relative;
+}
+
+.imagen{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.botones {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 2000;
+
+}
+
+.iconos{
+    display: block;
+    border-radius: 90px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Columnas responsivas*/
+
+@media (max-width: 1599px) { 
+    #galeria {
+        columns:4;
+    }
+
+}
+@media (max-width: 1191px) { 
+    #galeria {
+        columns:3;
+    }
+
+}
+        
+@media (max-width: 890px) {
+    #galeria {
+        columns: 2;
+    }
+}
+@media (max-width: 600px) {
+    #galeria {
+        columns: 1;
+    }
+}
